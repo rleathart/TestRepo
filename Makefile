@@ -36,7 +36,7 @@ Clean: clean
 	-Get-ChildItem -File $(PROGNAME) -ErrorAction Ignore | Remove-Item -Force
 else
 clean:
-	$(RM) $(OBJ)
+	$(RM) $(OBJ) $(DEP)
 Clean: clean
 	$(RM) $(PROGNAME)
 endif
